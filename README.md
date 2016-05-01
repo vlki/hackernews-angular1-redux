@@ -20,7 +20,7 @@ as I am trying to understand all the nuances of connecting Redux with Angular.
 
 ## Run it yourself
 
-```javascript
+```bash
 git clone git@github.com:vlki/hackernews-angular1-redux.git
 
 cd hackernews-angular1-redux
