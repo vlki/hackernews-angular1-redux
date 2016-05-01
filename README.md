@@ -32,10 +32,14 @@ open http://localhost:8080/
 
 ## Want to add
 
+- [ ] Add graceful error handling when the request does not go through
 - [ ] Store the angular-ui-router's state in Redux (probably via [redux-ui-router](https://github.com/neilff/redux-ui-router)?)
-- [ ] Add automatic refreshing based on the updates endpoint of HN Firebase API
+- [ ] Add manual refresh button
+- [ ] Add automatic refreshing by checking the `updates` HN Firebase API endpoint
 - [ ] Add [reselect](https://github.com/reactjs/reselect) to memoize results of
   selectors for speed
+- [ ] Try saving the application state to local storage so the state does not have to
+  be reloaded on each browser reload
 
 ## License
 
