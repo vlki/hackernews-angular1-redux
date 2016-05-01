@@ -8,7 +8,7 @@ Notable features:
 * angular-ui-router
 * Redux
 * redux-thunk
-* ES2015 via Babel (preset 'es2015')
+* ES2015 via Babel (preset es2015)
 * Webpack
 
 Not using [ng-redux](https://github.com/angular-redux/ng-redux) at the moment
