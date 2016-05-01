@@ -14,7 +14,27 @@ Notable features:
 Not using [ng-redux](https://github.com/angular-redux/ng-redux) at the moment
 as I am trying to understand all the nuances of connecting Redux with Angular.
 
-## How it looks right now
+### Why?
+
+Angular 1 provides a lot of tools for solving common problems of building web
+application. But it does not help with a problem of keeping data and state.
+
+Redux offers concept of keeping state at one place and having purely functional
+reducers which can update the state according to the passed action.
+
+I find Redux's concept useful, because it makes the transitions between states
+clear (= [simpler](http://www.infoq.com/presentations/Simple-Made-Easy)),
+allows having the presentation layer stateless, and offers a way to test
+transitions between application states without the need of writing tests for
+generated HTML (I wrote some Selenium tests before and, said nicely, its not
+a memory I enjoy getting back to).
+
+There are already some examples of using Redux and Angular 1 together, but
+there is none using the combination of flavors I am using:
+* [John Papa's Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+* folder structure by domain, rather than by their type
+
+### How it looks right now
 
 ![Screenshot](https://raw.githubusercontent.com/vlki/hackernews-angular1-redux/master/screenshot.png)
 
