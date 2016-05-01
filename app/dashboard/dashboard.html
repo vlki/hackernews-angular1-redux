@@ -1,0 +1,17 @@
+<h1>Dashboard</h1>
+
+<h2>Top stories</h2>
+
+<p ng-show="vm.isLoading">Loading...</p>
+
+<div ng-show="!vm.isLoading">
+    <ul>
+        <li ng-repeat="ts in vm.topStories track by ts.id"><a href="{{ ts.url }}">{{ ts.title }}</a></li>
+    </ul>
+
+    <p>
+        <a ng-show="vm.page > 0" href="#" ng-click="vm.prevPage()">Prev</a>
+        Page: {{ vm.page + 1 }}
+        <a ng-show="vm.page < vm.maxPage" href="#" ng-click="vm.nextPage()">Next</a>
+    </p>
+</div>

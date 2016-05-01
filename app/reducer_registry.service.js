@@ -1,7 +1,12 @@
+import { entities, topStories } from './dashboard/reducer'
+
 // Based on the code splitting redux reducers example
 // https://github.com/insin/react-examples/tree/master/code-splitting-redux-reducers
 const ReducerRegistry = () => {
-    let reducers = {}
+    let reducers = {
+        entities,
+        topStories
+    }
     let changeListener = null
 
     return {

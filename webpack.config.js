@@ -32,7 +32,7 @@ module.exports = {
         })
     ],
 
-    devtool: 'eval',
+    devtool: 'cheap-module-eval-source-map',
 
     devServer: {
         // Means that all requests which does not match any asset will be

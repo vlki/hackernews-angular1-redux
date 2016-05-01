@@ -1,19 +1,18 @@
+import 'babel-polyfill'
 import angular from 'angular'
 import angularUiRouter from 'angular-ui-router'
-import todolist from './todolist'
-import todos from './todos'
+import dashboard from './dashboard'
 
-const appModule = angular.module('app', [
+const app = angular.module('app', [
     angularUiRouter,
-    todolist,
-    todos
+    dashboard
 ])
 
 import storeProvide from './store.service.js'
-storeProvide(appModule)
+storeProvide(app)
 
 import routerConfigProvide from './router_config.js'
-routerConfigProvide(appModule)
+routerConfigProvide(app)
 
 import reducerRegistryProvide from './reducer_registry.service.js'
-reducerRegistryProvide(appModule)
+reducerRegistryProvide(app)

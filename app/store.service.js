@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
 import createLogger from 'redux-logger'
+import thunk from 'redux-thunk';
 
 storeFactory.$inject = ['reducerRegistry']
 
@@ -13,12 +14,15 @@ function storeFactory(reducerRegistry) {
         }
     }
 
-    const logger = createLogger()
+    const logger = createLogger({
+        // So we can open only the actions we care about
+        collapsed: true
+    })
 
     const store = createStore(
         combineReducers(reducers),
         compose(
-            applyMiddleware(logger),
+            applyMiddleware(thunk, logger),
 
             // If there is Redux dev tools extension, connect to it
             // See https://github.com/zalmoxisus/redux-devtools-extension#2-use-with-redux
