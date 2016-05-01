@@ -4,9 +4,9 @@ import {
     getCurrentPageTopStories
 } from './selectors'
 
-TodolistController.$inject = ['$scope', 'store']
+TopStoriesController.$inject = ['$scope', 'store']
 
-export default function TodolistController($scope, store) {
+export default function TopStoriesController($scope, store) {
     const vm = this
 
     vm.nextPage = nextPage

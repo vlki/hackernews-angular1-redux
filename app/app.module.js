@@ -1,11 +1,11 @@
 import 'babel-polyfill'
 import angular from 'angular'
 import angularUiRouter from 'angular-ui-router'
-import dashboard from './dashboard'
+import topStories from './top_stories'
 
 const app = angular.module('app', [
     angularUiRouter,
-    dashboard
+    topStories
 ])
 
 import storeProvide from './store.service.js'

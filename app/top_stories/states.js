@@ -1,11 +1,11 @@
-import template from './dashboard.html'
-import controller from './dashboard.controller.js'
+import template from './top_stories.html'
+import controller from './top_stories.controller.js'
 
 setupStates.$inject = ['$stateProvider']
 
 function setupStates($stateProvider) {
     $stateProvider
-        .state('dashboard', {
+        .state('topStories', {
             url: '/',
             templateUrl: template,
             controller: controller,
